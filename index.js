@@ -25,6 +25,10 @@ const server = app.listen(PORT, () => {
   console.log("Listening on port: ", PORT);
 });
 
+app.get('/', (req, res) => {
+  res.send('Hey this is my API running')
+})
+
 console.log(server);
 
 mongoose
